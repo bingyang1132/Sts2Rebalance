@@ -1,0 +1,10 @@
+{
+  "BORROWED_TIME.description": "对自己施加[blue]3[/blue]层[gold]灾厄[/gold]。\n获得{Energy:energyIcons()}。",
+  "DEFY.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n给予{WeakPower:diff()}层[gold]虚弱[/gold]。",
+  "ETERNAL_ARMOR.description": "获得{PlatingPower:diff()}层[gold]覆甲[/gold]。",
+  "EXPECT_A_FIGHT.description": "你的[gold]手牌[/gold]中每有一张攻击牌，就获得{energyPrefix:energyIcons(1)}。{InCombat:\n（获得{CalculatedEnergy:energyIcons()}）|}",
+  "GLOW.description": "获得{Stars:starIcons()}。\n抽{Cards:diff()}张牌。",
+  "HOTFIX.description": "在本回合获得{FocusPower:diff()}点[gold]集中[/gold]。",
+  "SPITE.description": "造成{Damage:diff()}点伤害。\n如果你在本回合失去过生命值，\n抽1张牌。",
+  "STOKE.description": "[gold]消耗[/gold]所有[gold]手牌[/gold]。\n抽等量的牌。"
+}

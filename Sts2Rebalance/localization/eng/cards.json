@@ -1,0 +1,10 @@
+{
+  "BORROWED_TIME.description": "Apply [blue]3[/blue] [gold]Calamity[/gold] to yourself.\nGain {Energy:energyIcons()}.",
+  "DEFY.description": "Gain {Block:diff()} [gold]Block[/gold].\nApply {WeakPower:diff()} [gold]Weak[/gold].",
+  "ETERNAL_ARMOR.description": "Gain {PlatingPower:diff()} [gold]Plating[/gold].",
+  "EXPECT_A_FIGHT.description": "Gain {energyPrefix:energyIcons(1)} for each Attack in your [gold]Hand[/gold].{InCombat:\n(Gain {CalculatedEnergy:energyIcons()})|}",
+  "GLOW.description": "Gain {Stars:starIcons()}.\nDraw {Cards:diff()} cards.",
+  "HOTFIX.description": "Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "SPITE.description": "Deal {Damage:diff()} damage.\nIf you lost HP this turn,\ndraw 1 card.",
+  "STOKE.description": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nDraw that many cards."
+}
