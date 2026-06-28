@@ -3,7 +3,7 @@
 Language: 中文 | English
 
 `Sts2Rebalance` 是一个面向《Slay the Spire 2》的平衡性调整 Mod。  
-它的目标是用尽量小的运行时补丁，对原版进阶、卡牌和后续机制数值做可追踪、可回滚的重平衡。
+它的主要目标是把正式版按头不让玩小循环的改动还回去。
 
 ## 功能
 
@@ -17,7 +17,7 @@ Language: 中文 | English
 当前版本主要包含：
 
 - A6 取消原版卡牌移除涨价惩罚，改为商店整体涨价
-- 铁甲战士、静默猎手、亡灵契约师、储君、故障机器人和无色卡牌的第一批卡牌调整
+- 铁甲战士、静默猎手、亡灵契约师、储君、故障机器人的运转
 - 地图生成逻辑调查文档，为后续机制改动做准备
 
 完整列表见 [`docs/rebalance-changes.md`](docs/rebalance-changes.md)。
@@ -38,10 +38,10 @@ Language: 中文 | English
 
 1. 下载发布包，或自行构建得到发布文件
 2. 在游戏安装目录下创建或打开 `mods` 文件夹
-3. 将发布文件放入：
+3. 将发布文件放入游戏目录下的mod文件夹：
 
 ```text
-D:\Sponsored\Steam\steamapps\common\Slay the Spire 2\mods\Sts2Rebalance
+...\Steam\steamapps\common\Slay the Spire 2\mods\Sts2Rebalance
 ```
 
 4. 启动游戏，在 Mod 列表中确认 `Sts2Rebalance` 与依赖已启用
@@ -72,13 +72,6 @@ C:\Users\你的用户名\AppData\Roaming\SlayTheSpire2\logs
 - 改动列表：[`docs/rebalance-changes.md`](docs/rebalance-changes.md)
 - 当前进阶参考：[`docs/current-ascensions.md`](docs/current-ascensions.md)
 - 地图生成调查：[`docs/map-generation-investigation.md`](docs/map-generation-investigation.md)
-- 发布指南：[`docs/release.md`](docs/release.md)
-
-本仓库只存放 `Sts2Rebalance` Mod。完整开发工作区和 agent 交接文档见：
-
-```text
-https://github.com/bingyang1132/STS2ModDev
-```
 
 ## 本地构建
 
@@ -144,7 +137,7 @@ When using the Steam Workshop version, subscribe to and enable both dependencies
 3. Put the release files under:
 
 ```text
-D:\Sponsored\Steam\steamapps\common\Slay the Spire 2\mods\Sts2Rebalance
+...\Steam\steamapps\common\Slay the Spire 2\mods\Sts2Rebalance
 ```
 
 4. Start the game and confirm that `Sts2Rebalance` and its dependencies are enabled in the mod list
@@ -175,13 +168,6 @@ C:\Users\YourUserName\AppData\Roaming\SlayTheSpire2\logs
 - Change list: [`docs/rebalance-changes.md`](docs/rebalance-changes.md)
 - Current ascension reference: [`docs/current-ascensions.md`](docs/current-ascensions.md)
 - Map generation investigation: [`docs/map-generation-investigation.md`](docs/map-generation-investigation.md)
-- Release guide: [`docs/release.md`](docs/release.md)
-
-The complete development workspace and agent handoff documentation are maintained at:
-
-```text
-https://github.com/bingyang1132/STS2ModDev
-```
 
 ## Local Build
 
