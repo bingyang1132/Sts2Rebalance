@@ -7,6 +7,7 @@ Slay the Spire 2 rebalance mod.
 - Change list: `docs/rebalance-changes.md`
 - Current ascension reference: `docs/current-ascensions.md`
 - Map generation investigation notes: `docs/map-generation-investigation.md`
+- Release guide: `docs/release.md`
 
 ## Local Build
 
