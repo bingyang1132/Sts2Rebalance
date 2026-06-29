@@ -1,48 +1,56 @@
-# Rebalance Changes
+# 平衡性改动列表
 
-This file records the active gameplay patches in `Sts2Rebalance`.
+本文记录 `Sts2Rebalance` 当前生效的游戏性补丁。
 
-## Ascension
+## Mod 定位
 
-### A5 Ascender's Bane
+一个平衡性调整 Mod。
 
-Unchanged from vanilla. A5 still adds `Ascender's Bane` to the starting deck.
+主要目标是把正式版按头不让玩小循环的改动还回去，同时调整了部分 3 费无色卡的不合理设计，对标塔 1。
 
-### A6 Inflation
+## 进阶
 
-Vanilla behavior:
+### A5 进阶者之灾
 
-- Card removal base cost becomes 100 gold.
-- Card removal price increase becomes 50 gold.
+保持原版不变。A5 仍然会向初始牌组加入 `Ascender's Bane`。
 
-Mod behavior:
+### A6 通货膨胀
 
-- Card removal uses the non-ascension formula: base 75 gold, +25 gold per previous removal.
-- Non-removal Merchant entries cost 10% more while A6+ is active.
-- The 10% increase is applied in `MerchantEntry.Cost` and excludes `MerchantCardRemovalEntry`.
+原版效果：
 
-Patch file: `Rebalance/Ascensions/InflationPatch.cs`.
+- 商人的卡牌移除服务基础价格变为 100 金币。
+- 每次使用卡牌移除服务后的涨价幅度变为 50 金币。
 
-## Cards
+Mod 效果：
 
-Patch file: `Rebalance/Cards/CardRebalancePatches.cs`.
+- 卡牌移除服务恢复为无进阶时的公式：基础价格 75 金币，每次使用后 +25 金币。
+- A6 及以上时，商店中非卡牌移除项目的价格提高 10%。
+- 10% 涨价作用于 `MerchantEntry.Cost`，并排除 `MerchantCardRemovalEntry`。
 
-| Card | Change |
+补丁文件：`Rebalance/Ascensions/InflationPatch.cs`。
+
+## 卡牌
+
+补丁文件：`Rebalance/Cards/CardRebalancePatches.cs`。
+
+| 卡牌 | 改动 |
 | --- | --- |
-| Ironclad `Stoke` / 添柴 | 1(0)-cost rare skill. Exhausts your hand, draws the same number of cards, and Exhausts. |
-| Ironclad `Spite` / 怨恨 | 0-cost uncommon attack. Deals 5(7) damage. If you lost HP this turn, draw 1 card. |
-| Ironclad `Expect a Fight` / 跃跃欲试 | Removes the `NoEnergyGainPower` effect; it no longer prevents later energy gain this turn. |
-| Silent `Acrobatics` / 杂技 | Rarity changed from Uncommon to Common. |
-| Necrobinder `Borrowed Time` / 预借时间 | 0-cost uncommon skill. Applies 3 `CalamityPower` to yourself, then gains 1(2) energy. |
-| Necrobinder `Defy` / 违逆 | Upgrade changed from 9 Block / 1 Weak to 7 Block / 2 Weak. |
-| Necrobinder `Dirge` / 挽歌 | Removes Exhaust. |
-| Regent `Glow` / 辉光 | 1-cost common skill. Gains 1(2) Star and draws 2 cards. No next-turn draw. |
-| Silent `Anticipate` / 预判 | Dexterity changed from 2(3) to 3(4). |
-| Defect `Hotfix` / 热修复 | Removes Exhaust. Upgrade now increases temporary Focus from 2 to 3. |
-| Colorless `Rolling Boulder` / 滚石 | Cost changed from 3 to 2. |
-| Colorless `Eternal Armor` / 永恒铠甲 | Cost changed from 3 to 2. Plating changed from 9(12) to 8(10). |
+| 铁甲战士 `Stoke` / 添柴 | 重做为 1(0) 费稀有技能牌。消耗所有手牌，然后抽等量的牌。消耗。 |
+| 铁甲战士 `Spite` / 怨恨 | 重做为 0 费罕见攻击牌。造成 5(7) 点伤害。如果你在本回合失去过生命值，抽 1 张牌。 |
+| 铁甲战士 `Expect a Fight` / 跃跃欲试 | 移除 `NoEnergyGainPower` 效果；本回合内不再阻止后续获得能量。 |
+| 静默猎手 `Acrobatics` / 杂技 | 稀有度从罕见改为普通。 |
+| 亡灵契约师 `Borrowed Time` / 预借时间 | 重做为 0 费罕见技能牌。对自己施加 3 层 `CalamityPower`，然后获得 1(2) 点能量。 |
+| 亡灵契约师 `Defy` / 违逆 | 升级版从 9 点格挡 / 1 层虚弱改为 7 点格挡 / 2 层虚弱。 |
+| 亡灵契约师 `Dirge` / 挽歌 | 移除消耗。 |
+| 储君 `Glow` / 辉光 | 重做为 1 费普通技能牌。获得 1(2) 辉星，抽 2 张牌。不再提供下回合抽牌。 |
+| 静默猎手 `Anticipate` / 预判 | 获得的敏捷从 2(3) 点提高到 3(4) 点。 |
+| 故障机器人 `Hotfix` / 热修复 | 移除消耗。升级后本回合获得的集中从 2 点提高到 3 点。 |
+| 无色 `Rolling Boulder` / 滚石 | 耗能从 3 改为 2。 |
+| 无色 `Eternal Armor` / 永恒铠甲 | 耗能从 3 改为 2。获得的覆甲从 9(12) 改为 8(10)。 |
 
-Localization overrides live in:
+## 本地化
+
+卡牌文本覆盖位于：
 
 - `Sts2Rebalance/localization/eng/cards.json`
 - `Sts2Rebalance/localization/zhs/cards.json`
